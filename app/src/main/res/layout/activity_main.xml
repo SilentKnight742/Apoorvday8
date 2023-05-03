@@ -22,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:onClick="timerClick"
             android:text="TIMER" />
 
         <Button
@@ -29,6 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:onClick="smsClick"
             android:text="SMS" />
 
         <Button
@@ -36,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.01"
+            android:onClick="callClick"
             android:text="CALL" />
 
         <Button
@@ -43,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:onClick="alarmClick"
             android:text="ALARM" />
 
         <Button
@@ -50,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:onClick="pageClick"
             android:text="PAGE" />
     </LinearLayout>
 
@@ -66,18 +71,35 @@
         app:layout_constraintVertical_bias="0.248">
 
         <TableRow
+            android:id="@+id/TableRow"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
-                android:layout_width="106dp"
+                android:id="@+id/edName"
+                android:layout_width="119dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="enter name"
                 android:inputType="textPersonName"
                 android:textColor="#FDFDFD"
                 android:textColorHint="#FDFCFC" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edNum"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter number"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FDF9F9" />
         </TableRow>
     </TableLayout>
 
